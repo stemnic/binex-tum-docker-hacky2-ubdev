@@ -34,6 +34,10 @@ ADD vuln /home/pwn/vuln
 ADD start_server.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/start_server.sh
 
+# Dumb get_flag
+ADD get_flag /usr/local/bin/get_flag
+RUN chmod +x /usr/local/bin/get_flag
+
 RUN chmod 0755 /home/pwn/vuln
 
 EXPOSE 1337
