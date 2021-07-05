@@ -1,4 +1,4 @@
-FROM ubuntu:impish
+FROM ubuntu:impish-20210606
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt-get update -y && DEBIAN_FRONTEND="noninteractive" && apt-get install -y -q dialog apt-utils build-essential screen netcat cmake wget gdb htop vim git libssl-dev libffi-dev tmux gdbserver gdb-multiarch zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev python3 python3-dev python3-pip python3-setuptools libc6-dbg glibc-source && rm -rf /var/lib/apt/lists/*
