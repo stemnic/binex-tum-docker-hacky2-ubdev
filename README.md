@@ -1,3 +1,3 @@
-# TUM binex Hacky2-ubdev docker container
+# TUM binex Hacky2-ubdev:challange docker container
 
-To use it start run.sh when your $PWD points to your project directory
+To use it first build it with build.sh with your vuln file inside of this directory, afterwards run run.sh to start the docker container
